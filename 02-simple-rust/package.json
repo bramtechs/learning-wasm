@@ -1,12 +1,12 @@
 {
-    "name": "01-simple-rust",
+    "name": "02-simple-rust",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
         "wasm": "wasm-pack build --target web",
         "build": "wasm-pack build --target web && webpack",
-        "clean": "rm index.js; rm -rf ./pkg",
+        "clean": "rm -rf dist pkg target",
         "host": "python3 -m http.server 8080 --directory dist"
     },
     "keywords": [],
